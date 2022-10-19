@@ -1,0 +1,173 @@
+body {
+   margin: 0;
+   color: #fffbeb;
+   font-size: 15pt;
+   font-family: cursive
+}
+
+p {
+   text-align: justify;
+}
+
+.back {
+   display: block;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   background-image: url('./img/back.jpg');
+}
+
+.content {
+   width: 70%;
+   margin: 0 auto;
+   padding: 0;
+   display: block;
+   background: rgba(46, 46, 46, 0.82);
+   padding: 0 30px;
+   backdrop-filter: blur(5px);
+   box-shadow: 0px 0px 50px 10px rgb(0 0 0);
+
+}
+ .basic-info-conteiner {
+   display: flex;
+   justify-content: center;
+   margin: 50px;
+   align-items: center;
+}
+
+.gradient {
+   border-bottom: 2px solid;
+   border-image: linear-gradient(to right, #ffffff00, #fffbeb, #ffffff00 ) 47% 0%;
+   margin: 50px 0;
+}
+
+.header {
+   width: 100%;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.circle-image {
+   display: flex;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 300px;
+   height: 300px;
+   margin: 0 20px;
+   white-space: nowrap;
+   justify-content: center;
+}
+
+.sub-basic-info-conteiner {
+   padding-left: 50px;
+}
+
+.chapter {
+   padding: 10px;
+   text-align: left;
+}
+
+.feedback-chapter {
+   display: flex;
+   justify-content: center;
+}
+
+.bio {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.gallery-container {
+   margin-bottom: 20px;
+}
+
+.form-container {
+   max-width: 600px;
+   margin: 0 auto 20px auto;
+}
+
+.form-all {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-element {
+   margin: 10px 0;
+   justify-content: center;
+}
+
+.left-column {
+   display: inline-block;
+   width: 200px;
+   margin-left: 3.5em;
+}
+
+.right-column {
+   display: inline-block;
+   padding-left: 40px;
+}
+  
+
+.slider {
+   overflow: hidden;
+   max-width: 400px;
+   margin: 0 auto;
+}
+
+.slider figure {
+   position: relative;
+   width: 500%;
+   margin: 0;
+   left: 0;
+   animation: 20s slider infinite;
+}
+
+.slider figure img {
+   float: left;
+   width: 20%;
+   height: 300px;
+}
+
+@keyframes slider {
+   0% {
+      left: 0;
+   }
+   15% {
+      left:0;
+   }
+   20% {
+      left: -100%;
+   }
+   45% {
+      left: -100%;
+   }
+   50% {
+      left: -200%;
+   }
+   70% {
+      left: -200%;
+   }
+   75% {
+      left: -300%;
+   }
+   95% {
+      left: -300%;
+   }
+   100% {
+      left:-400%;
+   }
+}
+
+.icons-block {
+   text-align: center;
+   padding-top: 40px;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+}
